@@ -13,7 +13,7 @@ bool isBalanced(string str){
             if(s.empty()==true){
                 return false;
             }
-            else if(matching(s.top(),str[i]==false)){
+            else if(matching(s.top(),str[i])==false){
                 return false;
             }
             else{
