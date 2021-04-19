@@ -17,7 +17,7 @@ int unboundedKnapsack(int wt[],int val[],int w, int n){
     {
         for (int j = 1; j <= w; j++)
         {
-            if (wt[i - 1] > w)
+            if (wt[i - 1] > j)
             {
                 dp[i][j] = dp[i - 1][j];
             }
@@ -31,7 +31,7 @@ int unboundedKnapsack(int wt[],int val[],int w, int n){
 } 
 int main()
 {
-        int W = 100;
+    int W = 100;
     int val[] = {10, 30, 20};
     int wt[] = {5, 10, 15};
     int n = sizeof(val)/sizeof(val[0]);
